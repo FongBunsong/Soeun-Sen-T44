@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B.Gen Soeun Sen</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadier General Soeun Sen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT62JhuMfXMjkNiDg1mWcs8B5VyqKAdgeMUuTPUZx5hWvQPZloGRw9m7eyJqPUhjMHeEKQ&usqp=CAU"
-          width="200"
-          alt="Logo"
-          class="logo"
-        />
-        <div class="title">
-          <h1>អគ្គស្នងការដ្ឋាននគរបាលជាតិ</h1>
-          <h2>National Commissariat of National Police</h2>
-        </div>
-      </div>
-      <div class="profile-pic">
-        <img src="soeunsen.png" alt="Police Officer" />
-        <div class="officer-name">
-          <div class="name-row">
-            <strong class="grey-text"
-              >ឧត្តមសេនីយ៌ត្រី <span class="highlight">សឿន សេន</span></strong
-            >
-          </div>
-          <div class="rank-row grey-text">
-            <strong
-              >Brigadier General
-              <span class="highlight">Soeun Sen</span></strong
-            >
-          </div>
-          <div class="position-row khmer-name">
-            <strong>ស្នងការរង នគរបាលខេត្តសៀមរាប</strong>
-          </div>
-          <div class="position-row english-name grey-text">
-            <strong>Deputy Commissariat of Siem Reap</strong>
-          </div>
+        <header class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT62JhuMfXMjkNiDg1mWcs8B5VyqKAdgeMUuTPUZx5hWvQPZloGRw9m7eyJqPUhjMHeEKQ&usqp=CAU" alt="Logo" class="logo">
+            <h1>អគ្គស្នងការដ្ឋាននគរបាលជាតិ</h1>
+            <h2>National Commissariat of National Police</h2>
+        </header>
+        
+        <div class="profile">
+            <img src="soeunsen.png" alt="Brigadier General Soeun Sen" class="profile-pic">
+            <div class="officer-info">
+                <h3 class="khmer-name">ឧត្តមសេនីយ៌ត្រី <span class="highlight">សឿន សេន</span></h3>
+                <h4 class="rank">Brigadier General Soeun Sen</h4>
+                <h5 class="khmer-position">ស្នងការរង នគរបាលខេត្តសៀមរាប</h5>
+                <h6 class="english-position">Deputy Commissariat of Siem Reap</h6>
+            </div>
+            <div class="contact-info">
+                <p><strong>Tel:</strong> +855 66 40 46 44</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/soeun.sen.75?mibextid=LQQJ4d" target="_blank" class="facebook">Facebook</a>
+                    <a href="https://t.me/Police_SiemReap" target="_blank" class="telegram">Telegram</a>
+                </div>
+            </div>
         </div>
 
-        <div class="social-links">
-          <div class="phone-box">
-            <strong>Tel: +855 66 40 46 44</strong>
+        <section class="departments">
+          <h3 class="department-header">
+              <span class="khmer-department-header">អង្គភាព</span> <!-- Khmer Department -->
+              <span class="english-department-header">Department</span> <!-- English Department -->
+          </h3>
+          
+          <div class="department">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEt4y3Y9CAfKxRYtlmpiZSk6QV5tWNMrusCQ&s.png" alt="Anti-Economic Police Department Logo" class="department-logo">
+              <div class="department-info">
+                  <h3 class="khmer-department-name">នគរបាលប្រឆាំងបទល្មើសសេដ្ឋកិច្ច</h3>
+                  <h4 class="english-department-name grey-text">Anti-Economic Police Department</h4> <!-- Added class for grey text -->
+              </div>
           </div>
-          <a
-            href="https://www.facebook.com/soeun.sen.75?mibextid=LQQJ4d"
-            target="_blank"
-            >Facebook</a
-          >
-          <a href="https://t.me/Police_SiemReap" target="_blank">Telegram</a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+          <!-- Add more departments as needed -->
+      </section>
+      
+      
+
+      <section class="contact-form">
+        <h1>ពាក្យបណ្តឹង</h1>
+        <h2>Complaint Letter</h2>
+        <form>
+            <label for="name">
+                <span class="khmer-label">ឈ្មោះ:</span> <br><!-- Khmer Label -->
+                <span class="english-label">Name:</span> <!-- English Label -->
+            </label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">
+                <span class="khmer-label">អ៊ីម៉ែល:</span> <br><!-- Khmer Label -->
+                <span class="english-label">Email:</span> <!-- English Label -->
+            </label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">
+                <span class="khmer-label">សារ:</span> <br> <!-- Khmer Label -->
+                <span class="english-label">Message:</span> <!-- English Label -->
+            </label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">ផ្ញើសារ</button> <!-- Khmer Button -->
+        </form>
+    </section>
+    

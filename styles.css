@@ -1,108 +1,213 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align to the start to avoid cutting off */
   margin: 0;
-  background-color: #e6f2ff;
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Ensures it takes at least full height */
+  background-color: #e6f2ff;
 }
 
 .container {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: white;
-  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Add margin at the top */
 }
 
-.logo img {
-  width: 100px;
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
   height: auto;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  color: grey;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 400px;
+  height: auto;
+}
+
+.officer-info {
   margin-bottom: 20px;
-}
-
-.profile-pic img {
-  width: 390px;
-  height: 300px; /* Adjusted height to make it a portrait */
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.title h1 {
-  margin-bottom: 5px; /* Reduced margin below h1 */
-}
-
-.title h2 {
-  margin-top: 5px; /* Reduced margin above h2 */
-}
-
-.officer-name {
-  margin-bottom: 20px; /* Spacing between the officer name and position */
-}
-
-.name-row {
-  font-size: 30px; /* Larger size for the first row */
-  font-weight: bold; /* Make the first row bold */
-}
-
-.rank-row {
-  font-size: 25px; /* Smaller size for the second row */
-  color: grey; /* Set color to grey for both rank and position */
-  margin: 2px 0; /* Reduced spacing for rank */
 }
 
 .khmer-name {
-  font-size: 23px; /* Make the Khmer name slightly bigger */
-  color: black; /* Change the text color to black */
-  margin: 1px 0; /* Further reduced spacing around the Khmer name */
+  font-size: 30px; /* Larger size for Khmer name */
+  color: black; /* Black color for Khmer text */
+  margin: 5px 0;
 }
 
-.english-name {
-  font-size: 18px; /* Font size for the English name */
-  color: grey; /* Change the text color to grey */
-  margin: 1px 0; /* Further reduced spacing around the English name */
+.rank {
+  font-size: 20px; /* Slightly smaller for English rank */
+  color: grey; /* Grey color for English rank */
+  margin: 5px 0;
 }
 
-.position-row {
-  font-size: 22px; /* Font size for the position */
-  margin: 4px 0; /* Adjusted spacing around the position text */
+.khmer-position {
+  font-size: 24px; /* Larger size for Khmer position */
+  color: black; /* Black color for Khmer position */
+  margin: 5px 0;
 }
 
-.social-links {
-  margin-top: 20px; /* Optional margin for spacing */
+.english-position {
+  font-size: 18px; /* Smaller size for English position */
+  color: grey; /* Grey color for English position */
+  margin: 5px 0;
 }
 
-.phone-box {
-  background-color: #007bff; /* A vibrant blue that matches Facebook and Telegram */
-  padding: 10px 15px; /* Padding inside the box */
-  border-radius: 5px; /* Rounded corners */
-  margin-bottom: 10px; /* Spacing between phone and social links */
-  font-size: 18px; /* Font size for phone number */
-  color: white; /* Text color to match social links */
-  font-weight: normal; /* Ensure the font is not bold */
+.contact-info {
+  margin-top: 10px;
 }
 
 .social-links a {
-  display: block;
-  margin: 10px 0;
-  text-decoration: none;
-  color: white; /* Text color for social links */
-  background-color: #3b5998; /* Facebook color */
-  padding: 10px 20px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  color: white;
   border-radius: 5px;
+  text-decoration: none;
   transition: background-color 0.3s;
 }
 
-.social-links a:hover {
-  background-color: #2d4373; /* Darker shade on hover */
+.social-links .facebook {
+  background-color: #3b5998;
 }
 
-.social-links a:nth-child(2) {
-  background-color: #0088cc; /* Telegram color */
+.social-links .facebook:hover {
+  background-color: #2d4373;
 }
 
-.social-links a:nth-child(2):hover {
-  background-color: #005f8b; /* Darker shade on hover */
+.social-links .telegram {
+  background-color: #0088cc;
+}
+
+.social-links .telegram:hover {
+  background-color: #005f8b;
+}
+
+.departments {
+  margin-bottom: 30px;
+}
+
+.department {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.department-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.department-info {
+  text-align: left;
+}
+
+/* Existing CSS styles ... */
+
+.department-info h3 {
+  margin: 0;
+  font-size: 25px; /* Adjust this value as needed */
+}
+
+
+.department-info h4 {
+  margin: 0;
+  font-size: 20px;
+  color: grey; /* Default to grey, can be overridden */
+}
+
+/* New styles for grey text */
+.grey-text {
+  color: grey; /* Apply grey color */
+}
+
+/* Existing CSS styles ... */
+
+.khmer-department-header {
+  font-size: 25px; /* Adjust this size for Khmer department header */
+  color: black; /* Black color for Khmer department header */
+}
+
+.english-department-header {
+  font-size: 23px; /* Size for English department header */
+  color: grey; /* Grey color for English department header */
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form h1 {
+  font-size: 28px; /* Adjust this size for the Khmer header */
+  color: black; /* Set the color for the Khmer header */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.contact-form h2 {
+  font-size: 18px; /* Adjust this size for the English header */
+  color: grey; /* Set the color for the English header */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+
+.contact-form label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* New styles for Khmer and English labels */
+.khmer-label {
+    font-size: 16px; /* Adjust the font size for Khmer labels */
+    color: black; /* Black color for Khmer labels */
+    margin-right: 5px; /* Space between Khmer and English */
+}
+
+.english-label {
+    font-size: 16px; /* Adjust the font size for English labels */
+    color: grey; /* Grey color for English labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
 }
